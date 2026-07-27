@@ -42,7 +42,7 @@ The script moves through four stages:
 - Linux (developed and tested on Kali)
 - Root privileges (`sudo`)
 - Auto-installed if missing: `foremost`, `binwalk`, `bulk-extractor`, `binutils`
-- **Volatility 3** — optional; if absent, memory analysis is skipped gracefully. Install via `pipx install volatility3`.
+- **Volatility 3** — optional; if absent, memory analysis is skipped. Install via `pipx install volatility3`.
 
 ---
 
@@ -79,7 +79,7 @@ results_.../
 
 ## Notes & limitations
 
-- **Volatility 3 only.** Chosen deliberately over Volatility 2, which requires manual profile detection and (on modern systems) a difficult Python 2 install. The trade-off: some plugins are unsupported on legacy OS images — handled gracefully rather than fatally.
+- **Volatility 3 only.** Chosen deliberately over Volatility 2, which requires manual profile detection and (on modern systems) a difficult Python 2 install. 
 - Memory analysis is **Windows-focused**.
 - This is a **triage** tool. Its keyword hits and carved files are leads for deeper manual examination, not conclusions.
 
